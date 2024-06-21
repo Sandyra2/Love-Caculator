@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Calculator</title>
+</head>
+<body>
+  <script>
+   alert("Hello!");
+    var name = prompt("What is your name?");
+    
+    var x = name.slice(0,1);
+    var y = x.toUpperCase();
+    var z = name.slice(1,name.length);
+    var p = z.toLowerCase();
+    var nameTotal = (y + p);
+   alert("Hello, " + nameTotal + " Welcome.")
+   
+   prompt("What is your lovers name?");
+   alert("Result Loading..."); 
+   
+   var loveScore = Math.random() * 100;
+   loveScore = Math.floor(loveScore) + 1;
+   alert("Your Love scored " + loveScore + "%");
+   if (loveScore >= 1 && loveScore <=40) {
+    alert("You're like oil and water.")
+   }
+   else if(loveScore >= 41 && loveScore <=69){
+     alert("You might have a future together.")
+   }
+   else{
+    alert("Awwn...You're made for each other.")
+   }
+  </script>
+</body>
+</html>
